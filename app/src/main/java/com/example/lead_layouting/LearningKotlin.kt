@@ -135,4 +135,24 @@ class LearningKotlin {
             roda = newRoda
         }
     }
+
+
+    fun Akif() {
+// TODO: rubah disini
+    }
+
+    fun Syaid() {
+// TODO: rubah disini
+
+    }
+
+    fun Zahra() {
+// TODO: rubah disini
+
+    }
+
+    fun Zacky() {
+// TODO: rubah disini
+
+    }
 }
