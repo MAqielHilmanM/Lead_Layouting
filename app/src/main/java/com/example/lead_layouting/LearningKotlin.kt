@@ -149,7 +149,7 @@ class LearningKotlin {
         val input : Int = readLine()!!.toInt()
         val angka = input?.toInt()
         println("angka yang anda masukan adalah $angka")
-        println("tambahan")
+        println("tambahan test")
     }
 
     fun Zahra() {
