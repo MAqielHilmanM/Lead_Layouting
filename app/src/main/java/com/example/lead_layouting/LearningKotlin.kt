@@ -141,9 +141,12 @@ class LearningKotlin {
 // TODO: rubah disini
     }
 
-    fun Syaid() {
+    fun Sayyid() {
 // TODO: rubah disini
-
+        print("masukan angka :")
+        val input : Int = readLine()!!.toInt()
+        val angka = input?.toInt()
+        println("angka yang anda masukan adalah $angka")
     }
 
     fun Zahra() {
