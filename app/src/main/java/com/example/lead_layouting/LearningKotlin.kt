@@ -139,6 +139,7 @@ class LearningKotlin {
 
     fun Akif() {
 // TODO: rubah disini
+        val hasil = penjumlahan(2,3)
     }
 
     fun Syaid() {
