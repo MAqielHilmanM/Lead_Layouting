@@ -139,10 +139,18 @@ class LearningKotlin {
 
     fun Akif() {
 // TODO: rubah disini
+        val hasil = penjumlahan(2,3)
+        Log.wtf("TAG", "Akif: $hasil", )
     }
 
-    fun Syaid() {
+    fun Sayyid() {
 // TODO: rubah disini
+        print("masukan angka :")
+        val input : Int = readLine()!!.toInt()
+        val angka = input?.toInt()
+        println("angka yang anda masukan adalah $angka")
+        println("tambahan test")
+        println("do something")
 
     }
 
@@ -152,7 +160,8 @@ class LearningKotlin {
     }
 
     fun Zacky() {
-// TODO: rubah disini
+        val age = 20
+        if (age > 17) "OK" else "Forbid!"
 
     }
 }
