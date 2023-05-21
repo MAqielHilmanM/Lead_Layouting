@@ -12,7 +12,8 @@
     <dimen name="width_172dp">172dp</dimen>
     <dimen name="width_130dp">130dp</dimen>
     <dimen name="width_72dp">72dp</dimen>
-    
+    <dimen name="width_2dp">2dp</dimen>
+
     <dimen name="margin_128dp">128dp</dimen>
     <dimen name="margin_112dp">112dp</dimen>
     <dimen name="margin_80dp">80dp</dimen>
@@ -34,4 +35,5 @@
 
     <dimen name="corner_16dp">16dp</dimen>
     <dimen name="corner_8dp">8dp</dimen>
+    <dimen name="height_2dp">2dp</dimen>
 </resources>
