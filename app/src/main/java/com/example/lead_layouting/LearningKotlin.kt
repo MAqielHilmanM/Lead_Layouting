@@ -152,7 +152,8 @@ class LearningKotlin {
     }
 
     fun Zacky() {
-// TODO: rubah disini
+        val age = 20
+        if (age > 17) "OK" else "Forbid!"
 
     }
 }
