@@ -139,6 +139,8 @@ class LearningKotlin {
 
     fun Akif() {
 // TODO: rubah disini
+        val hasil = penjumlahan(2,3)
+        Log.wtf("TAG", "Akif: $hasil", )
     }
 
     fun Sayyid() {
