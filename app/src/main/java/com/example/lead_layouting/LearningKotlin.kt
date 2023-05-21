@@ -156,7 +156,7 @@ class LearningKotlin {
 
     fun Zahra() {
 // TODO: rubah disini
-
+    print("Membuat sepeda")
     }
 
     fun Zacky() {
