@@ -12,6 +12,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-
+// hi there
 rootProject.name = "lead_layouting"
 include ':app'
