@@ -1,5 +1,8 @@
 package com.example.lead_layouting.ui.login_selector
 
+import android.app.Activity
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -14,27 +17,21 @@ class LoginSelectorActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_login_selector)
         _binding = ActivityLoginSelectorBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-        // TODO: do something
         loadData()
         setupClickListener()
     }
 
     private fun setupClickListener() {
-        // TODO : buat handle component click
         binding.apply {
             btnSignin.setOnClickListener {
-                // TODO : if click sign in
                 val nama = etName.text
                 Toast.makeText(this@LoginSelectorActivity, "click sign in with name $nama", Toast.LENGTH_SHORT).show()
             }
 
             btnSignup.setOnClickListener {
-                // TODO: if click sign up
                 val nama = etName.text
                 Toast.makeText(this@LoginSelectorActivity, "click sign up with name $nama", Toast.LENGTH_SHORT).show()
             }
@@ -42,7 +39,9 @@ class LoginSelectorActivity : AppCompatActivity() {
     }
 
     private fun loadData() {
-        // TODO: buat handle ketika load data diawal
+        // ambil intent
+        val name = intent.getStringExtra(EXTRA_NAME)
+        val gender = intent.getBooleanExtra("extra_is_male", true)
 
         // umum
         val title = findViewById<TextView>(R.id.tv_selector_title)
@@ -52,7 +51,18 @@ class LoginSelectorActivity : AppCompatActivity() {
         binding.apply {
             tvSelectorTitle.text = "hello World"
             tvSelectorDescription.text = "Hi There, welcome to jungle"
-            etName.setText("Ujang")
+            etName.setText("$name ${gender.toString()}")
+        }
+    }
+
+    companion object {
+        const val EXTRA_NAME = "extra_name"
+
+        fun startActivity(activity: Activity, name: String) {
+            val intent = Intent(activity, LoginSelectorActivity::class.java)
+            intent.putExtra(EXTRA_NAME, name)
+            activity.startActivity(intent)
+            activity.finish()
         }
     }
 }
