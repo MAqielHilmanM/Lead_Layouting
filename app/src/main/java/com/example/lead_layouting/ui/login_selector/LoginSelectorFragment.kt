@@ -52,12 +52,18 @@ class LoginSelectorFragment : Fragment() {
 //                ).show()
 
                 navigateToRegister(nama)
+                navigateToRegister()
             }
         }
     }
 
-    private fun navigateToRegister(nama: String) {
-        val direction = LoginSelectorFragmentDirections.actionLoginSelectorFragmentToRegisterFragment(nama)
+    private fun navigateToRegister(nama: String? = null) {
+//        val direction = if(!nama.isNullOrBlank()) {
+//            LoginSelectorFragmentDirections.actionLoginSelectorFragmentToRegisterFragment(nama)
+//        } else {
+//            LoginSelectorFragmentDirections.actionLoginSelectorFragmentToRegisterFragment()
+//        }
+        val direction = LoginSelectorFragmentDirections.actionLoginSelectorFragmentToRegisterFragment(nama.orEmpty())
         findNavController().navigate(direction)
     }
 
